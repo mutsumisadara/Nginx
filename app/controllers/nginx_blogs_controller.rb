@@ -50,7 +50,6 @@ class NginxBlogsController < ApplicationController
   # DELETE /nginx_blogs/1 or /nginx_blogs/1.json
   def destroy
     @nginx_blog.destroy
-
     respond_to do |format|
       format.html { redirect_to nginx_blogs_url, notice: "Nginx blog was successfully destroyed." }
       format.json { head :no_content }
