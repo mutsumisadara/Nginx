@@ -5,5 +5,5 @@ worker_processes 4
 listen '/tmp/nginx.socket', backlog: 1024
 
 before_fork do |server,worker|
-	FileUtils.touch('/tmp/app-initialized')
+  FileUtils.touch('/tmp/app-initialized') 
 end
