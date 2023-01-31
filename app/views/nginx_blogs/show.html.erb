@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @nginx_blog.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @nginx_blog.content %>
+</p>
+
+<%= link_to 'Edit', edit_nginx_blog_path(@nginx_blog) %> |
+<%= link_to 'Back', nginx_blogs_path %>

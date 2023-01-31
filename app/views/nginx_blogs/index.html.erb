@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nginx Blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nginx_blogs.each do |nginx_blog| %>
+      <tr>
+        <td><%= nginx_blog.title %></td>
+        <td><%= nginx_blog.content %></td>
+        <td><%= link_to 'Show', nginx_blog %></td>
+        <td><%= link_to 'Edit', edit_nginx_blog_path(nginx_blog) %></td>
+        <td><%= link_to 'Destroy', nginx_blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nginx Blog', new_nginx_blog_path %>

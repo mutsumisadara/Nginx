@@ -1,0 +1,2 @@
+class NginxBlog < ApplicationRecord
+end
